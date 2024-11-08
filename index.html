@@ -10,13 +10,13 @@
 <body>
     <div class="main">
         <div class="search">
-            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <input id="search" type="text" placeholder="Ex: New York" spellcheck="false">
             <button><img src="Images/magnifying-glass.png" alt=""></button> 
         </div>
         <div class="container">
             <div class="weather">
-                <img src="Images/cloud-rain (1).png" alt="">
-                <h1 class="temp">22°C</h1>
+                <img class="weather-icon" src="Images/cloud-rain (1).png" alt="">
+                <h1 id="temp" class="temp">22°C</h1>
                 <h2 class="city">New York</h2>       
             </div>
             <div class="details">
@@ -36,10 +36,11 @@
                 </div>
             </div>
         </div>
+        <div class="error">City not found</div>
         
     </div>
 
 
-    
+   <script type="module" src="script.js"></script> 
 </body>
 </html>

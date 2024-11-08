@@ -13,8 +13,8 @@ body {
 
     height: 100vh;
     width: 100vw;
-
-    /* color: antiquewhite; */
+    
+    /* background-color: #C7E6E7; */
     background: linear-gradient(90deg, #383838 5%, #C7E6E7 45%, #C7E6E7 55%, #383838 95%);
 
 }
@@ -26,6 +26,8 @@ body {
 
     box-shadow: 0 0 20px #383838;
     border-radius: 50px;
+
+    font-family:'Gilroy-Regular';
 }
 .search{
     border: 5px solid #383838;
@@ -37,28 +39,41 @@ body {
 
     display: flex;
     justify-content: center;
-   background: linear-gradient(white, #C7E6E7);
+    background: linear-gradient(white, #C7E6E7);
+
+    font-family:'Gilroy-Regular';
 }
 .search input {
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 50px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 
     height: 54px;
-    background-color: #C7E6E7;
+    background-color: transparent;
     outline: 0;
+
+    border: 5px solid #C7E6E7;
+    border-right: none;
+
+    font-size: 18px;
+    font-family:'Gilroy-Regular';
+
 }
 .search input::placeholder {
     font-size: 18px;
 }
 .search button {
-    background-color: #C7E6E7;
+    background-color: transparent;
     height: 54px;
     width: 54px;
     border-radius: 50px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    cursor: pointer;
+    border: 5px solid #C7E6E7;
+    border-left: none;
+
 }
 
 
@@ -67,6 +82,8 @@ body {
     background-color: #383838;
     border-bottom-left-radius:50px;
     border-bottom-right-radius:50px;
+
+    font-family:'Gilroy-Regular';
 
 }
 
@@ -85,10 +102,12 @@ body {
     flex-direction: column;
     align-items: center;
 
-    color: #383838;
+    color: rgb(56, 56, 56);
     
     font-size: 34px;
 
+
+    font-family:'Gilroy-Regular';
 }
 .weather img {
     width: 96px;
@@ -123,6 +142,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.error {
+    color: #000000;
+    background-color: #C7E6E7;
+    border-radius: 50px;
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    border: 5px solid #383838;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+
+    display: none;
 }
 
 
